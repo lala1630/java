@@ -1,0 +1,15 @@
+import java.util.*;
+package listD;
+import java.util.*;
+public class listD {
+public static void main(String args[]) {
+ List<Integer> lstData = new ArrayList<Integer>();
+ lstData.add(150);
+ lstData.add(78);
+ lstData.add(1000);
+ lstData.add(23);
+ lstData.add(450);
+
+ System.out.println(lstData);
+ }
+}
