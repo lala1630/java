@@ -1,0 +1,19 @@
+package lamda;
+
+import java.util.function.*;
+
+public class Lamda {
+    public static void main(String args[]) {
+        Message m = new Message();
+        m.printStringInteger("Nikhil", 43,
+            (String str, Integer number) -> {
+                System.out.println("The values are: " + str + " " + number);
+            });
+    }
+
+    private static class Message {
+        public void printStringInteger(String str, Integer number, BiConsumer<String, Integer> biConsumber) {
+            biConsumber.accept(str, number);
+        }
+    }
+}
